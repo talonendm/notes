@@ -1,0 +1,32 @@
+# Git cmd
+
+
+
+
+…or create a new repository on the command line
+
+echo "# notes" >> README.md
+
+go to folder..
+
+git init
+git add README.md    -------------- <-- not done
+git commit -m "first commit"
+git remote add origin https://github.com/talonendm/notes.git
+
+git remote -v
+
+
+$ git push origin master
+
+fill user and password.
+
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.27 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/talonendm/notes.git
+ * [new branch]      master -> master
+
+JT5@JT5-PC MINGW64 /c/talonendm/notes (master)
