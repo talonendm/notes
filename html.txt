@@ -1,0 +1,30 @@
+# Formatting HTML code
+
+Bold
+<b>
+<strong> # the same as but in the source code different
+
+Underline # do not use, to confusing - can be mixed to links
+<u>
+
+<big> <small>
+<span> better
+
+<mark>
+
+
+<ins>truly</ins>
+
+<del>line over text</del>
+
+# Images
+
+<img src = "file.jpg">
+<img src = "file.jpg" width="300" height="300">
+
+<img src = "file.jpg" width=50%>
+the height is calculated
+
+# Audio
+
+<audio src="file.mp3" autoplay></audio>

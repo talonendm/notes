@@ -1,0 +1,471 @@
+html.html
+
+160721: Lines: 1-
+160721: useful for scraping
+
+<p>
+
+</p>
+
+# Formatting HTML code
+
+Bold
+<b>
+<strong> # the same as but in the source code different
+
+Underline # do not use, to confusing - can be mixed to links
+<u>
+
+<big> <small>
+<span> better
+
+<mark>
+
+
+<ins>truly</ins>
+
+<del>line over text</del>
+
+# Images
+
+<img src = "file.jpg">
+<img src = "file.jpg" width="300" height="300">
+
+<img src = "file.jpg" width=50%>
+the height is calculated
+
+<-- Audio ->
+# Audio
+<audio src="file.mp3" autoplay></audio>
+
+# gives a player
+<audio src="file.mp3" controls></audio>
+
+# looping sound
+<audio src="file.mp3" autoplay loop></audio>
+mp3 should work pretty well in PC and mac, not in mobile phones...
+
+if older browser:
+<this_new_html_tag>
+  <p> sorry, not working</p>
+</this>
+
+<video src="file.mp4" autoplay poster="posterimage.jpg">
+</video>
+
+<video src="file.mp4" controls>
+</video>
+
+- handling video, very similar as images
+
+
+# Links
+
+<a>
+  href attribute
+</a>
+
+<a href="linkki">anchor</a>
+
+## Anchoring links
+
+use images insteasd of link texts.
+
+<a href="linkki">img src="kuva.png"></a>
+
+## A postion within a page
+
+add id
+e.g.
+<p id="here">
+
+<a href = "#here"> go here</a>
+In same page reference.
+
+# if you eant to jump certain location in different webpage
+<a href="web_page.html#here"></a>
+
+<a href="http://wwwlipsum.com/">Lipsum</a>
+
+For creating websites without content.
+
+
+# Void elements & breaks
+
+HTML:
+<start_tag> -- </end_tag>
+
+they do not have start or moddle and end..
+just a TAG.
+
+<meta name="author" content="talonendm">
+
+no closing...
+
+
+<img>
+
+<input>
+
+
+<br>
+<wbr>  in the middle of long
+<hr> long line
+
+
+## Breaks
+
+
+# style
+
+Cascading Style Sheets
+CSS
+
+Visual component of the webpage
+
+1 CSS file, multiple webpages
+can be used for all pages, i.e. a set of rules
+
+<head>
+  <link href="ddd.css" rel="stylesheet" type ="text/css">
+</head>
+
+simple css:
+
+h1 { color:purple}
+p {color:blue}
+
+
+So does for every
+more CSS stuff:
+
+color
+background
+font-family
+font-size
+text-align
+
+
+or write directly style rules to head.
+
+use a unique <!-- IDEA:  -->
+
+<!-- sdd -->
+
+<ul id = "rainbow">
+  <li id="moi">Red</li>
+  <li id="hei">Yellow</li>
+</ul>
+
+
+in CSS
+<style>
+  #moi {background: orange}
+  #hei {background:yellow}
+</style>
+
+## Using class
+
+make your own rule
+
+<style>
+  .zappy {color:purple, background:yellow}
+</style>
+
+
+<h1 class="zappy">My heading</h1>
+
+
+### Use multiple classes
+
+one element can use multiple classes
+
+
+<style>
+  #moi {background: orange}
+  #hei {color:yellow}
+</style>
+
+<p class= "moi hei">My heading with two style classes</p>
+
+# More on style
+
+pseudo classes
+
+in-line style
+<p style="text-align:right">moi</p>
+
+hard to manage.. can be trouble
+
+
+<style>
+  li {background: orange}
+<style>
+
+
+in line has higher priority
+
+<body>
+<ul>
+  <li>dssd</li>
+  <li style="background:white">dssd</li>
+</ul>
+</body>
+
+
+## Context control
+
+ul li {color:yellow}
+
+
+
+<ul>
+  <li>dssd</li>
+  <li style="background:white">dssd</li>
+</ul>
+
+does not apply to this:
+
+<ol>
+  <li>dssd</li>
+  <li style="background:white">dssd</li>
+</ol>
+
+
+## Pseudo classes
+
+h1:hover {color:red}
+
+
+move mouse over heading
+
+
+a:link
+a:visited
+a:active
+p:empty  this means empty element
+
+
+# Tables
+
+<table>
+  <thead>
+    <tr>  table row
+      <th> dd </th> -- colmns
+    </tr>
+  </thead>
+<tbody>
+    <tr>  table row
+      <td> dd </td> -- cells, see insterad of th we have td
+    </tr>
+
+
+</tbody>
+
+</table>
+
+
+
+<style>
+table, d, th {border:1pb solid black, padding:15px}  -- padding is spacisng
+</style>
+
+<body>
+  <table>
+    <tr><th>Menu</th></tr>
+    <tr><td>Pizza</td></tr>
+
+...
+
+
+
+## use class rules
+
+
+<style>
+  table, d, th {border:1pb solid black, padding:15px}  -- padding is spacisng
+  .profit {text-align; background-color: blue}
+</style>
+
+<body>
+  <table>
+    <tr><th>Menu</th></tr>
+    <tr><td class ="profit">Pizza</td></tr>
+  </table>
+</body>
+
+
+    ...
+
+
+    <style>
+      table, d, th {border:1pb solid black, padding:15px}  -- padding is spacisng
+      .profit {text-align; background-color: blue}
+      .t {vertical-align: top} .m {vertical-align: middle}
+      .l {text-align: left}
+    </style>
+
+    <body>
+      <table>
+        <tr><th>Menu</th></tr>
+        <tr><td class ="profit">Pizza</td></tr>
+        <tr><td class ="t l ">Pizza 2 </td></tr>
+        <tr><td class ="m l ">Pizza 3 </td></tr>
+      </table>
+    </body>
+
+
+## Using an html editor
+
+
+# Div and span
+
+## div
+
+no style
+understanding div.
+
+<div>
+hi
+</div>
+
+div does not have anything until style is <section>
+
+<div style = background-color:yellow">
+
+  hi.
+
+</div>
+
+
+div, image, etc. those can be potitioned
+
+position:absolute
+with top:xxx
+
+top:0 and left:0
+
+e.g. to get it to top left corner.
+
+<div style = background-color:yellow; font-size:16pt; postion:absoltute; top:60px; left:60px">
+testi
+</div>
+
+<div style = background-color:red; font-size:16pt; postion:absoltute; top:70px; left:90px">
+testi
+</div>
+
+## relative position
+
+go top, go down...
+
+
+## span
+
+span has no default style
+span is used for a few words.
+
+
+<span style="background-color:yellow">moro</span>
+
+# HTML form basics
+- how to make form
+
+<form>
+
+webpage, a form there. buttons, and submit.
+
+sends to server. save the data. sends email.. whatever.
+
+<form action = "destination" method="get or post"> how you will sent those get or post
+
+  <input type="submit">    tell here where data will be sent.
+
+</form>
+
+
+
+
+<form action = "http://www.server...php">
+
+  it is possible, that form and php are in the same server...
+  /subdirectory/file.php
+
+
+  method="get"  this is a default command, ...
+
+
+  bing.com
+
+search program at server.
+  bing.com/search?q=cats ---
+q = query
+
+
+
+for project development URL, is easy... but no secrets. only can handle few hundred letters
+
+
+the post method: huge files, videos, etc. data is NOT shown in the URL.
+
+server... no matter which language, written in php...
+
+<form action="fdfdf.php" method=gGet">
+
+<p> fdf </p>
+<textarea rows = "3" cols = "60" name= "feedback"> Please fill..</textarea><br>
+<input type = "submit">
+
+</form>
+
+REQUEST URI feedback = ffdfdf
+
+
+# More forms
+
+<select>
+
+  ...
+
+SKIPPASIN
+
+
+# Handling file upload
+
+not server side things...
+
+1) upload the form, and so on
+2) forn side...
+
+- filr upload
+- file upload example (later)
+
+# new HTML5 elements
+
+<input type="date"
+time
+color picker
+slider
+
+<input type= "color" id="color" name="color"><br>
+
+
+# Element grouping
+
+<fieldset>
+
+  <legend> moro</legend>
+
+
+</fieldset>
+
+helps to coordionate forms.. so grouping.. add subboxes to ..
+but no need to be a form.
+
+
+# HTML CSS assignment
+
+select picture, and it is shown on the page.
+
+
+---------------------------
