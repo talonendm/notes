@@ -11,6 +11,8 @@ go to folder..
 
 git init
 git add README.md    -------------- <-- not done
+
+git add .
 git commit -m "first commit"
 git remote add origin https://github.com/talonendm/notes.git
 
@@ -30,3 +32,10 @@ To https://github.com/talonendm/notes.git
  * [new branch]      master -> master
 
 JT5@JT5-PC MINGW64 /c/talonendm/notes (master)
+
+
+
+Changes in github:
+git pull origin master
+
+origin, maybe should use e.g. notes.. if another repo is used?!
