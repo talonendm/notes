@@ -1,6 +1,7 @@
 # Git cmd
 
 
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
 
 …or create a new repository on the command line
@@ -39,3 +40,25 @@ Changes in github:
 git pull origin master
 
 origin, maybe should use e.g. notes.. if another repo is used?!
+
+ - -------
+
+git clone https://github.com/talonendm/Processing.git
+
+
+https://github.com/CodingRainbow/Rainbow-Code
+git clone https://github.com/CodingRainbow/Rainbow-Code.git
+[160721]
+ja silloin tällöin pull (en turhaan tehnyt forkia githubissa)
+
+160721
+Other computers: clone to different folders, e.g.
+svn/talonendm
+svn/other/
+
+git clone https://github.com/shiffman/Box2D-for-Processing.git
+git clone https://github.com/shiffman/The-Nature-of-Code-Examples.git
+git clone https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js.git
+
+
+http://www.local-guru.net/blog/2010/08/10/calling-r-from-processing
