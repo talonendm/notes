@@ -1,3 +1,27 @@
+# GIT
+
+http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+
+git add -A is equivalent to git add --all
+git add -u is equivalent to git add --update
+
+
+This command will add and commit all the modified files, but not newly created files.
+
+USEFUL:
+-------
+git commit -am  "<commit message>"
+From man git-commit:
+
+   -a, --all
+       Tell the command to automatically stage files that have been modified
+       and deleted, but new files you have not told Git about are not
+       affected.
+
+
+
+https://pages.github.com/
+
 # Git cmd
 
 
