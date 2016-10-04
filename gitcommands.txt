@@ -85,4 +85,21 @@ git clone https://github.com/shiffman/The-Nature-of-Code-Examples.git
 git clone https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js.git
 
 
+
+# GIT was stucked in TERMUX
+
+This may be an old reply but I'm hoping this is more useful on next who need this solution.
+
+On linux/unix/gitbash/cygwin, try
+
+rm -f .git/index.lock
+
+On Windows Command Prompt, try:
+
+del .git\index.lock
+
+WORKED: ref: [ http://stackoverflow.com/questions/9282632/git-index-lock-file-exists-when-i-try-to-commit-but-cannot-delete-the-file ]
+
+
+
 http://www.local-guru.net/blog/2010/08/10/calling-r-from-processing
