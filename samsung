@@ -1,0 +1,186 @@
+samsung 170326
+
+Ubuntu 170326
+
+Python:
+https://docs.continuum.io/anaconda/install-linux.html
+
+X In your browser, download the Anaconda installer for Linux.
+
+Optional: Verify data integrity with MD5 or SHA-256. More info on hashes
+
+Open a terminal window and type the following:
+
+bash ~/Downloads/Anaconda3-4.3.0-Linux-x86_64.sh
+
+NOTE: Replace ~/Downloads with your actual path and Anaconda3-4.3.0-Linux-x86_64.sh with your actual file name.
+
+NOTE: Accept the default location or select a user-writable install location such as ~/anaconda.
+
+NOTE: Install Anaconda as a user unless root privileges are required.
+
+Follow the prompts on the installer screens, and if unsure about any setting, simply accept the defaults, as they can all be changed later.
+
+NOTE: If you select the option to not add the Anaconda directory to your bash shell PATH environment variable, you may later add this line to the file .bashrc in your home directory: export PATH="/home/username/anaconda/bin:$PATH" Replace /home/username/anaconda with the actual path.
+
+The output of a successful installation will include the messages “Installation finished.” and “Thank you for installing Anaconda!”
+
+Close and re-open your terminal window for the changes to take effect.
+
+When your install is complete, begin using Anaconda with the instructions iFor Linux
+
+Anaconda is BSD licensed which gives you permission to use Anaconda commercially and for redistribution.
+
+Changelog
+
+    Download the installer
+    Optional: Verify data integrity with MD5 or SHA-256   More info
+    In your terminal window type one of the below and follow the instructions:
+
+    Python 3.6 version
+
+    bash Anaconda3-4.3.1-Linux-x86_64.sh 
+
+    Python 2.7 version
+
+    bash Anaconda2-4.3.1-Linux-x86_64.sh 
+
+    NOTE: Include the "bash" command even if you are not using the bash shell.
+n What’s next?
+
+
+Download page:
+
+X > bash ~/Downloads/Anaconda3-4.3.1-Linux-x86_64.sh
+
+
+
+....
+
+Do you approve the license terms? [yes|no]
+>>>   yes
+
+Anaconda3 will now be installed into this location:
+/home/_______/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/______/anaconda3] >>> 
+PREFIX=/home/_______/anaconda3
+installing: python-3.6.0-0 ...
+
+....
+creating default environment...
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/_____/.bashrc ? [yes|no]
+
+tilttas - coypastes
+export PATH="/home/______/anaconda/bin:$PATH" Replace /home/username/anaconda with the actual path.
+
+
+
+:~/anaconda3$ cd ..
+:~$ export PATH=~/anaconda3/bin:$PATH
+:~$ conda --version
+conda 4.3.14
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04
+
+conda create --name my3env python=3
+Proceed ([y]/n)? y
+
+openssl-1.0.2k 100% |################################################################| Time: 0:00:02   1.13 MB/s
+readline-6.2-2 100% |################################################################| Time: 0:00:00   1.38 MB/s
+sqlite-3.13.0- 100% |################################################################| Time: 0:00:03   1.13 MB/s
+tk-8.5.18-0.ta 100% |################################################################| Time: 0:00:01   1.59 MB/s
+xz-5.2.2-1.tar 100% |################################################################| Time: 0:00:01 615.03 kB/s
+zlib-1.2.8-3.t 100% |################################################################| Time: 0:00:00 656.26 kB/s
+python-3.6.1-0 100% |################################################################| Time: 0:00:13   1.32 MB/s
+setuptools-27. 100% |################################################################| Time: 0:00:00 808.44 kB/s
+wheel-0.29.0-p 100% |################################################################| Time: 0:00:00   1.01 MB/s
+pip-9.0.1-py36 100% |################################################################| Time: 0:00:01   1.13 MB/s
+#
+# To activate this environment, use:
+# > source activate my3env
+#
+# To deactivate this environment, use:
+# > source deactivate my3env
+#
+
+:~$ source activate my3env
+
+$ python --version
+Python 3.6.1 :: Continuum Analytics, Inc.
+When you’re ready to deactivate your Anaconda environment, you can do so by typing:
+
+    source deactivate
+
+
+
+
+conda install --name my3env numpy
+
+
+source activate my3env
+
+
+
+
+conda install anaconda-clean
+
+
+
+
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/jaakko/.bashrc ? [yes|no]
+[no] >>> yes
+
+Prepending PATH=/home/jaakko/anaconda3/bin to PATH in /home/jaakko/.bashrc
+A backup will be made to: /home/jaakko/.bashrc-anaconda3.bak
+
+o-samsung:~$ rm -rf ~/anaconda3
+jaung:~$ bash ~/Downloads/Anaconda3-4.3.1-Linux-x86_64.sh
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Anaconda3!
+
+Share your notebooks and packages on Anaconda Cloud!
+Sign up for free: https://anaconda.org
+
+~$ conda update conda
+Fetching package metadata .........
+Solving package specifications: .
+
+# All requested packages already installed.
+# packages in environment at /home/jaakko/anaconda3:
+#
+conda                     4.3.14                   py36_0  
+ conda update anaconda
+Fetching package metadata .........
+Solving package specifications: .
+
+# All requested packages already installed.
+# packages in environment at /home/jaakko/anaconda3:
+#
+anaconda                  4.3.1               np111py36_0  
+
+
+
+
+....
+
+
+http://stackoverflow.com/questions/29077826/open-spyder-in-ubuntu
+
+sudo apt-get install spyder
+
+
+spyder IDE ok
