@@ -184,3 +184,87 @@ sudo apt-get install spyder
 
 
 spyder IDE ok
+
+
+
+
+
+PROCESSIIG
+
+
+
+Download Processing
+
+The first thing to do is to download Processing 3 from https://processing.org/download/. '''
+
+[http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html]:
+
+To get the Processing archive into the /opt directory, open a Terminal session (shortcut Ctrl+Alt+T) and type in the following command:
+
+sudo file-roller
+
+Yes, the executable file that is the Archive Manager program is actually named "file-roller" Note that after entering this command you will be prompted to enter the password that is associated with your user account - that's because you've used the sudo command.
+
+As a consequence of issuing the above command, the Archive Manager window should now be open.
+
+Use Ctrl+O to open a file selection dialog and navigate to where your Processing file (processing-3.0.2-linux64.tgz) is located and select it.
+
+Once the file has been selected, right click on the filename and select the Extract option.
+
+Navigate to where you want to install Processing - I click Computer and then double-click the directory named opt.
+
+Once you're in the opt directory, click the "Extract" button. Your Processing archive will now be unpacked to a directory named Processing-3.0.2.
+
+You are now done with the Archive Manager so go ahead and close it.
+
+Back in your Terminal window, navigate to the directory where you just extracted Processing. For my installation I enter the following command:
+
+cd /opt/Processing-3.0.2
+
+Now issue the following command to list the contents of the directory:
+
+ls -l
+
+Start Processing by entering the following command:
+
+./processing
+
+sudo su -c "ln -s /opt/processing-3.0.2/processing /usr/local/bin/processing"
+
+OMA:
+
+Processing is installed but it is not easily accessible. The last thing I want is to have to open a Terminal session and manually type in a command every time I want to run Processing. Instead I want a desktop icon I can just click whenever I want to start Processing.
+
+First we'll tell Ubuntu where it can find Processing. What we'll do is to add the Processing folder to Ubuntu's $PATH environment variable by creating a symbolic link. We'll do this using the following command:
+
+
+sudo su -c "ln -s /opt/processing-3.3/processing /usr/local/bin/processing"
+
+
+
+And because we're using sudo, we'll be prompted to enter our user account password.
+
+Now, change to the applications directory using the following command:
+
+cd /usr/share/applications/
+
+We will now create and edit a launcher file for Unity (Unity being the graphical shell for the GNOME desktop environment developed by Canonical for Ubuntu). Start by entering the following command - which will create the file processing.desktop and simultaneously open gedit so you can edit the file:
+
+sudo gedit /usr/share/applications/processing.desktop
+
+
+[Desktop Entry]
+Version=3.3
+Name=Processing
+Comment=Processing Rocks
+Exec=processing
+Icon=/opt/processing-3.3/lib/icons/pde-256.png
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;Graphics;
+
+HUOM! Icon path muutettu: muuten hyvät ohjeet. http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html
+
+Now save the file and exit gedit. Note that on my system, running gedit resulted in some error messages being printed out in my Terminal session. I ignored them. Instead I just verifed that my file was created and contained the content I pasted into it by using the following command to list the file's contents:
+
+cat processing.desktop
