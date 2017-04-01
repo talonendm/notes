@@ -268,3 +268,64 @@ HUOM! Icon path muutettu: muuten hyvät ohjeet. http://www.artsnova.com/processi
 Now save the file and exit gedit. Note that on my system, running gedit resulted in some error messages being printed out in my Terminal session. I ignored them. Instead I just verifed that my file was created and contained the content I pasted into it by using the following command to list the file's contents:
 
 cat processing.desktop
+
+
+
+
+
+
+GIT
+https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/
+
+1 Installing Git for Linux
+
+Download and install Git for Linux :
+
+sudo apt-get install git
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.7.4-0ubuntu1).
+git set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 122 not upgraded.
+
+
+2 Configuring GitHub
+
+Once the installation has successfully completed, the next thing to do is to set up the configuration details of the GitHub user. To do this use the following two commands by replacing "user_name" with your GitHub username and replacing "email_id" with your email-id you used to create your GitHub account.
+
+git config --global user.name "talonendm"
+
+git config --global user.email "talonen.dm@gmail.com"
+
+The following image shows an example for my configuration with my "user_name" being "akshaypai" and my "email_id" being "abc123@gmail.com"
+
+
+
+
+----
+
+
+http://stackoverflow.com/questions/16376035/fatal-could-not-create-work-tree-dir-kivy
+
+Your current directory does not has the write/create permission to create kivy directory, thats why occuring this problem.
+
+Your current directory give 777 rights and try it.
+
+sudo chmod 777 DIR_NAME
+cd DIR_NAME
+git clone https://github.com/mygitusername/kivy.git
+
+
+and then  !   sudo chmod 777 
+
+sudo chmod 777 talonendm
+:~$ cd talonendm/
+~/talonendm$ git clone https://github.com/talonendm/p5js-page.git
+Cloning into 'p5js-page'...
+remote: Counting objects: 95, done.
+remote: Total 95 (delta 0), reused 0 (delta 0), pack-reused 95
+Unpacking objects: 100% (95/95), done.
+Checking connectivity... done.
+
