@@ -374,3 +374,18 @@ After running this, the installer may note some missing dependencies -- use
 sudo apt-get -f install
 
 to ensure those get installed and are made available to RStudio.
+
+
+
+ebook reader
+
+sudo apt-get install okular okular-extra-backends 
+
+
+Calibre
+
+https://askubuntu.com/questions/14378/what-software-can-i-use-to-view-epub-documents
+
+
+
+
