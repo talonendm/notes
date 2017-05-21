@@ -363,6 +363,35 @@ sudo dpkg -i rstudio-1.0.136-amd64.deb
 
 https://www.youtube.com/watch?v=1Q6qIrNIxsE
 
+
+
+170521
+Fixing R googleAnalyticsR
+-------------------------
+
+https://askubuntu.com/questions/423143/solving-var-lib-dpkg-lock-open-13-permission-denied-with-are-you-root-e
+
+WORKED
+sudo apt-get update && sudo apt-get upgrade
+
+in R, during installation: errors
+this should fix:
+apt-get install libssl-dev/unstable
+
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:<your-directory>
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib
+
+# en varma, lopulta kait näin..
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib
+
+https://github.com/swirldev/swirl/issues/498
+sudo apt-get install libssl-dev
+
+
+
+
+
+
 eli
 
 For now, with Ubuntu 16.04, you'll need to install RStudio manually from the command line:
