@@ -329,3 +329,92 @@ remote: Total 95 (delta 0), reused 0 (delta 0), pack-reused 95
 Unpacking objects: 100% (95/95), done.
 Checking connectivity... done.
 
+
+
+
+
+R and Rstudio
+
+
+https://www.r-bloggers.com/download-and-install-r-in-ubuntu/
+
+Through Terminal
+
+    Press Ctrl+Alt+T to open Terminal
+    Then execute sudo apt-get update 
+    After that, sudo apt-get install r-base
+
+To run R statistical package, execute R in the Terminal (see the picture below).
+
+
+R
+
+works...
+
+
+
+Rstudio:
+
+
+downloads: https://www.rstudio.com/products/rstudio/download/
+cd Downloads
+sudo dpkg -i rstudio-1.0.136-amd64.deb 
+
+
+https://www.youtube.com/watch?v=1Q6qIrNIxsE
+
+
+
+170521
+Fixing R googleAnalyticsR
+-------------------------
+
+https://askubuntu.com/questions/423143/solving-var-lib-dpkg-lock-open-13-permission-denied-with-are-you-root-e
+
+WORKED
+sudo apt-get update && sudo apt-get upgrade
+
+in R, during installation: errors
+this should fix:
+apt-get install libssl-dev/unstable
+
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:<your-directory>
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib
+
+# en varma, lopulta kait näin..
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib
+
+https://github.com/swirldev/swirl/issues/498
+sudo apt-get install libssl-dev
+
+
+
+
+
+
+eli
+
+For now, with Ubuntu 16.04, you'll need to install RStudio manually from the command line:
+
+sudo dpkg -i <path-to-RStudio.deb>  Toi siis ladattua versio paketista
+
+After running this, the installer may note some missing dependencies -- use
+
+sudo apt-get -f install
+
+to ensure those get installed and are made available to RStudio.
+
+
+
+ebook reader
+
+sudo apt-get install okular okular-extra-backends 
+
+
+Calibre
+
+https://askubuntu.com/questions/14378/what-software-can-i-use-to-view-epub-documents
+
+
+
+
